@@ -1,0 +1,58 @@
+@charset "utf-8";
+$enable-flex:               true !default;
+@import '../../../bower_components/bootstrap/scss/bootstrap';
+@import '../../../bower_components/font-awesome/scss/font-awesome';
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../../../bower_components/font-awesome/fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+  url('../../../bower_components/font-awesome/fonts/fontawesome-webfont.woff') format('woff'),
+  url('../../../bower_components/font-awesome/fonts/fontawesome-webfont.ttf')  format('truetype'),
+  url('../../../bower_components/font-awesome/fonts/fontawesome-webfont.svg') format('svg');
+}
+
+body{
+
+  nav{
+    background-color: black;
+    ul{
+        min-height: 50px;
+      display:flex;
+        padding: 0;
+       margin: 0;
+       list-style: none;
+       li{
+         align-self:center;
+         margin-right:15px;
+         a{
+           color: #00FF00;
+           &:hover{
+             color: #00FF00;
+           }
+         }
+       }
+    }
+  }
+  .flex-left{
+    justify-content: flex-end;
+  }
+  .main{
+    min-height: 750px;
+  }
+  footer{
+    min-height: 150px;
+    background-color: black;
+    ul{
+      min-height: 50px;
+    display:flex;
+    flex-direction: column;
+      padding: 0;
+     margin: 0;
+     list-style: none;
+      li{
+
+      }
+    }
+  }
+
+}
